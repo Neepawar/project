@@ -1,42 +1,99 @@
-body {
-    font-family: 'Segoe UI', sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #222;
+    background: #f9f9f9;
   }
   
   header {
-    background: #333;
+    background: #1e1e2f;
+    padding: 1rem 2rem;
     color: white;
-    padding: 20px;
-    text-align: center;
+    position: sticky;
+    top: 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
   }
   
   nav a {
     color: white;
-    margin: 0 15px;
     text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ffcc00;
+  }
+  
+  #hero {
+    background: linear-gradient(to right, #1e1e2f, #3e3e4f);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  #hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  #hero .btn {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background: #ffcc00;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
   }
   
   section {
-    padding: 40px 20px;
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .skills-list li {
+    background: #ddd;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  .project-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
   }
   
   footer {
-    background: #333;
+    background: #1e1e2f;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
   }
-  @media (max-width: 600px) {
-    nav {
-      display: block;
-    }
   
-    nav a {
-      display: block;
-      margin: 10px 0;
-    }
-  }
-    
