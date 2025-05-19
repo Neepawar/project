@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Neel Pawar | Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Neel's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <nav>
-      <h1>Neel Pawar</h1>
-      <ul>
+      <div class="logo">Neel</div>
+      <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -19,28 +19,49 @@
     </nav>
   </header>
 
-  <section id="hero">
-    <h2>Hello, I'm Neel Pawar</h2>
-    <p>Aspiring Software Developer</p>
-    <a href="#projects" class="btn">View My Work</a>
+  <section class="hero">
+    <h1>Hi, I'm Neel Pawar</h1>
+    <p>I'm a passionate developer crafting modern websites.</p>
+    <a href="#contact" class="btn">Hire Me</a>
   </section>
 
-  <section id="about">
+  <section id="about" class="section fade-in">
     <h2>About Me</h2>
-    <p>I’m a passionate software developer skilled in HTML, CSS, JavaScript, Python, and Java.</p>
+    <p>I am a software developer with experience in building responsive websites using HTML, CSS, JavaScript, and backend APIs.</p>
   </section>
 
-  <section id="skills">
+  <section id="skills" class="section slide-in-left">
     <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>HTML</li>
-      <li>CSS</li>
+    <ul class="skills">
+      <li>HTML5</li>
+      <li>CSS3</li>
       <li>JavaScript</li>
       <li>Python</li>
-      <li>Java</li>
-      <li>SQL</li>
+      <li>REST API</li>
     </ul>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2
+  <section id="projects" class="section slide-in-right">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>A responsive site to showcase my developer profile.</p>
+      </div>
+      <div class="card">
+        <h3>Library API</h3>
+        <p>RESTful API for managing books and users in a library system.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section fade-in">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:neel@example.com">neel@example.com</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Neel Pawar</p>
+  </footer>
+</body>
+</html>
